@@ -10,7 +10,7 @@ green='e[1;32m'
 blue='\e[1;34m'
 purple='\e1;35m'
 
-echo -e $red "figlet Termux-Wifi"
+echo -e $red && figlet "Termux-Wifi"
 echo -e $blue "by MrBlackx/TheMasterCH"
 echo -e $purple "modified by 0n1cOn3"
 
@@ -32,6 +32,7 @@ clear
 echo -e $purple "Successfully installed!"
 sleep 3
 proot-distro login ubuntu
+echo -e $purple "Login Ubuntu.."
 
 apt-get update
 apt-get upgrade -y
@@ -44,7 +45,7 @@ cd fluxion && chmod +rwx *
 ./fluxion.sh
 
 echo -e $red "by MrBlackX/TheMasterCH"
-echo -e $purple "modified by 0n1cOn3
+echo -e $purple "modified by 0n1cOn3"
 echo -e $green "Successfully installed!"
 
 
