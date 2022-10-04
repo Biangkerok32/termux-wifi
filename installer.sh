@@ -19,11 +19,7 @@ apt install git curl python2 python3
 clear
 
 apt install figlet wget proot tar curl -y
-# new Repo needs to be used cause the owner seems to discontinue the project (Readonly)wget https://raw.githubusercontent.com/Neo-Oli/termux-ubuntu/master/ubuntu.sh
-wget https://raw.githubusercontent.com/tuanpham-dev/termux-ubuntu/master/ubuntu.sh
-chmod +x ubuntu.sh
-bash ubuntu.sh
-clear
+apt install proot-distro -y
 
 echo -e $purple ================================================================
 echo " "
@@ -31,13 +27,11 @@ echo -e $blue && figlet "Installing requirements...
 echo " "
 echo -e $purple ================================================================
 
-chmod +rwx ubuntu.sh
-./ubuntu.sh
+proot-distro install ubuntu -y
 clear
 echo -e $purple "Successfully installed!"
 sleep 3
-./start-ubuntu.sh
-clear
+proot-distro login ubuntu
 
 apt-get update
 apt-get upgrade -y
