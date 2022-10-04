@@ -6,7 +6,7 @@
 pkg install figlet -y 
 
 red='\e[1;31m'
-green='e[1;32m'
+green='\e[1;32m'
 blue='\e[1;34m'
 purple='\e1;35m'
 
@@ -44,8 +44,6 @@ git clone https://www.github.com/FluxionNetwork/fluxion.git
 cd fluxion && chmod +rwx *
 ./fluxion.sh
 
-echo -e $red "by MrBlackX/TheMasterCH"
-echo -e $purple "modified by 0n1cOn3"
 echo -e $green "Successfully installed!"
 
 
